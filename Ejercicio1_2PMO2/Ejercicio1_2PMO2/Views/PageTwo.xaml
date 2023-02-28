@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_2PMO2.Views.PageTwo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Datos de Usuario:" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold" Margin="15"/>
+
+            <Label Text="Nombre:" FontSize="20" FontAttributes="Bold" />
+            <Label Text="{Binding nombre}" x:Name="lbnombre" FontSize="18"/>
+
+            <Label Text="Apellidos:" FontSize="20" FontAttributes="Bold"/>
+            <Label Text="{Binding apellidos}" x:Name="lbapellidos" FontSize="18"/>
+
+            <Label Text="Edad:" FontSize="20" FontAttributes="Bold"/>
+            <Label Text="{Binding edad}" x:Name="lbedad" FontSize="18"/>
+
+            <Label Text="Correo:" FontSize="20" FontAttributes="Bold"/>
+            <Label Text="{Binding correo}" x:Name="lbcorreo" FontSize="18"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

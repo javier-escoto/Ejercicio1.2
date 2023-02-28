@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_2PMO2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="ForestGreen" Padding="24" CornerRadius="0">
+            <Label Text="Ingresar Datos" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Label Text="Nombre:" TextColor="Black" FontSize="12" Padding="5,10,0,5"/>
+        <Entry x:Name="txtnombre" Keyboard="Text" Margin="0" FontSize="12" />
+        <Label Text="Apellidos:" TextColor="Black" FontSize="12" Padding="5,10,0,5"/>
+        <Entry x:Name="txtapellidos" Keyboard="Text" Margin="5" FontSize="12"/>
+        <Label Text="Edad:" TextColor="Black" FontSize="12" Padding="5,10,0,5"/>
+        <Entry x:Name="txtedad" Keyboard="Numeric" Margin="5" FontSize="12"/>
+        <Label Text="Correo Electrónico:" TextColor="Black" FontSize="12" Padding="5,10,0,5"/>
+        <Entry x:Name="txtcorreo" Keyboard="Email" Margin="5" FontSize="12"/>
+
+        <Button x:Name="btnenviar" Text="Enviar Información" Clicked="btnenviar_Clicked" Margin="25" BackgroundColor="Red" TextColor="Black" FontAttributes="Bold" CornerRadius="20"/>
+    </StackLayout>
+
+</ContentPage>
